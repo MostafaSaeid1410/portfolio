@@ -1,0 +1,64 @@
+.section-about {
+  padding-top: 4.8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__name {
+    color: $color-primary;
+  }
+  &__desc {
+    max-width: 60rem;
+  }
+  &__contants {
+    line-height: 0;
+    padding-top: 3.84rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.28rem;
+    & > * {
+      display: inline-block;
+    }
+  }
+}
+
+.section-projects {
+  padding-top: 10.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.projects-grid {
+  max-width: 110rem;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 7.2rem;
+}
+
+.section-skills {
+  padding-top: 12.3rem;
+}
+.skill__list {
+  max-width: 45rem;
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
+  &-skill {
+    margin: 0.5rem;
+    padding: 0.8rem 1.4rem;
+    background-color: $color-background-dark;
+    box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.15);
+  }
+}
+
+.section-contact {
+  padding-top: 12.3rem;
+  text-align: center;
+}

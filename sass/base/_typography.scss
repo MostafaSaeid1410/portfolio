@@ -1,0 +1,28 @@
+body {
+  font-family: $default-font-family;
+  font-weight: 400;
+  font-size: $default-font-size;
+  line-height: 1.7;
+  color: $default-font-color;
+}
+
+.heading-primary {
+  font-size: 6.4rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  @include respond(very-small-mobile) {
+    font-size: 4.8rem;
+  }
+}
+.heading-secondary {
+  font-size: 3.2rem;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.heading-teritiary {
+  text-align: center;
+  line-height: 1.2;
+  font-size: 2.4rem;
+}

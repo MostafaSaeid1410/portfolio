@@ -1,0 +1,30 @@
+@import '../abstracts/variables';
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  // overflow-x: hidden;
+  scroll-behavior: smooth;
+  @include respond(very-small-mobile) {
+    font-size: 48.6%;
+  }
+  @include respond(small-tab-port) {
+    font-size: 54.6%;
+  }
+}
+
+body {
+  box-sizing: border-box;
+  background-color: $color-background;
+  padding: 0 5rem;
+  @include respond(small-mobile) {
+    padding: 0 2.2rem;
+  }
+}

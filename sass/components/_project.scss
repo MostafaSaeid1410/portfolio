@@ -1,0 +1,105 @@
+.project {
+  max-width: 91rem;
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.6rem;
+  line-height: 1.5;
+  box-shadow: 0 1rem 2rem 0 rgba($color-black, 0.2);
+  transition: all 0.25s ease-out;
+  border-radius: 8px;
+  overflow: hidden;
+  @include respond(tab-port) {
+    height: 34rem;
+  }
+  // @include respond(small-mobile) {
+  //   height: 30rem;
+  // }
+  @include respond(very-small-mobile) {
+    height: 30rem;
+  }
+
+  @include respond(wide-mobile) {
+    flex-direction: column-reverse;
+    justify-content: start;
+    height: fit-content;
+    max-width: 46rem;
+    &--column-direction {
+      flex-direction: column;
+    }
+  }
+  &__desc {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+    padding: 3.2rem 1.6rem;
+    text-align: center;
+    @include respond(wide-mobile) {
+      padding: 1.2rem 4.6rem 1rem;
+    }
+    @include respond(mobile) {
+      padding: 1.2rem 1.6rem 1rem;
+    }
+  }
+  &__tags {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0.8rem;
+    font-weight: 500;
+    font-size: 1.28rem;
+    align-self: self-start;
+    @include respond(wide-mobile) {
+      margin-bottom: 5rem;
+    }
+    @include respond(small-mobile) {
+      margin-bottom: 3rem;
+    }
+
+    &__tags__tag {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      line-height: 0;
+      padding: 1.2rem 1.2rem;
+      border-radius: 9999px;
+      color: $color-background;
+      background-color: $tags-color;
+      font-size: 1.2rem;
+    }
+  }
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+    margin-top: auto;
+    @include respond(wide-mobile) {
+      margin-bottom: 3rem;
+    }
+  }
+  &:hover &__img-element {
+    transform: scale(1.25);
+  }
+  &__img {
+    overflow: hidden;
+    flex: 1 0 50%;
+    @include respond(wide-mobile) {
+      flex-direction: column-reverse;
+    }
+    &-element {
+      transition: all 0.25s ease-out;
+      height: 100%;
+      width: 100%;
+      @include respond(wide-mobile) {
+        height: 28rem;
+        flex-direction: column-reverse;
+      }
+    }
+  }
+}
