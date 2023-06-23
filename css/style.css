@@ -140,7 +140,7 @@ body {
     @media only screen and (max-width: 26em) {
       .project__tags {
         margin-bottom: 3rem; } }
-    .project__tags__tags__tag {
+    .project__tags__tag {
       display: flex;
       justify-content: center;
       align-items: center;
